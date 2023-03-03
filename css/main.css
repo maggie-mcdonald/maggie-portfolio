@@ -119,9 +119,12 @@ h1 {
 h2 {
   font-family: "Century Schoolbook";
   background-color: #2a9d8f;
-  font-size: 2em;
+  font-size: 1.5em;
 }
-/*------ Base Header-Footer Styles-------*/
+
+/*------ Base Header Styles-------*/
+
+
 
 header {
   display: flex;
@@ -134,12 +137,15 @@ header {
   background-color: #2a9d8f;
 }
 
+.figure {
+  max-width: 26em;
+  max-height: 23.5em; 
+}
 .header-content-wrapper {
   background-image: url(../img/code-mountain-color-scheme.png);
   background-color: #2a9d8f;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: round;
   border: .5em, #fff;
   padding: 4em;
   display: flex;
@@ -148,28 +154,42 @@ header {
 }
 
 .intro-flex-container {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 
-figure {
-  background-color: #2a9d8f;
-  margin: 3em;
-  padding: 1em;
-
-}
-
-.flex-container {
+.skills-flex-container {
   height: auto;
   width: auto;
   display: flex;
   flex-flow: row wrap;
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
+/*--aside with skills--*/
+
+.blue-skills-box {
+  background-color: #2a9d8f;
+}
+
+
+/*----project section  ----*/
+
+.project-flex-container {
+  background: #3a474e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
  * Hide visually and from screen readers
