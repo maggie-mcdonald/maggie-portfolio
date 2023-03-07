@@ -14,6 +14,7 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+  <script src="https://kit.fontawesome.com/a7717ad5f3.js" crossorigin="anonymous"></script>
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -38,58 +39,63 @@
 
 
   <header>
-    <div class="header-content-wrapper">
-      <div class="blue-box">
-        <h1>Maggie McDonald</h1>
-
-        <div class="intro-flex-container">
-          <div class="figure">
-            <figure>
-              <a href="#"><img src="img\profile-pic.png" alt="maggie"></a>
-            </figure>
-          </div>
-
-
-          <div>
-            <h2>Hi! I'm a Front End
-              <br>Web Developer
-              <br>in Georgia.
-            </h2>
-          </div>
-
-
-          <div>
-            <nav>
-              <button>Menu</button>
-              <!--will code hamburger menu later-->
-            </nav>
-          </div>
+    <section id="header">
+      <h1>Maggie McDonald</h1>
+      <div class="topnav">
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <!--put your resume here-->
+          <a href="https://drive.google.com/file/d/1KFT2SSki1rvDKGvvzIFngjWX_bOZX9EX/view?usp=share_link"
+            target="_blank">Resume</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-
-      </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
 
   </header>
+  <div class="header-content-wrapper">
+    <div class="intro-flex-container">
+      <div class="figure">
+        <figure>
+          <a href="#"><img src="img\profile-pic.png" alt="maggie"></a>
+        </figure>
+      </div>
 
-  <aside>
-    <div class="blue-skills-box">
-      <h2>Skills:</h2>
-      <div class="skills-flex-container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
+      <div>
+        <h2>Hi! I'm a Front End <br>Web Developer <br>in Georgia.
+        </h2>
       </div>
     </div>
-    </div>
-  </aside>
 
+    <section id="skills">
+      <div class="skills-section">
+        <h3 class="skill-title">Skills:</h3>
+        <p class="skills-list">
+          HTML5 | CSS3 | JavaScript | React.js | Flexbox & CSS Grid | JSX | ES6 | Git |
+          Version Control | APIs | Managing data flow | Media queries | Responsive typography
+        </p>
+      </div>
+      <div class="skills-section">
+        <h3 class="skill-title">Tools:</h3>
+        <p class="skills-list">
+          Visual Studio Code | Code Sandbox | Chrome DevTools | Github | Photoshop
+        </p>
+      </div>
+  </div>
+  </section>
+  </section>
   <!--Project Section-->
   <main>
-    <div class="project-flex-container">
+    <section id="projects">
       <div class="project-container">
-        <h2>Project: Guess The Word Game</h2>
+        <h3>Project: Guess The Word Game</h3>
         <div class="live-version">
+          <a href="#"><img src="img/guess-the-word.png" alt="guess-the-word-game"></a>
           <!--this is where I would like to place a live version of the repo-->
         </div>
         <div class="project-info">
@@ -103,8 +109,9 @@
       </div>
 
       <div class="project-container">
-        <h2>Project: Super Sticky Notes</h2>
+        <h3>Project: Super Sticky Notes</h3>
         <div class="live-version">
+          <a href="#"><img src="img/sitcky-note-app.png" alt="sticky-note-app"></a>
           <!--this is where I would like to place a live version of the repo-->
         </div>
         <div class="project-info">
@@ -118,8 +125,9 @@
 
 
       <div class="project-container">
-        <h2>Project: Github Repo Gallery</h2>
+        <h3>Project: Github Repo Gallery</h3>
         <div class="live-version">
+          <a href="#"><img src="img/github-repo-gallery.png" alt="github-repo-gallery"></a>
           <!--this is where I would like to place a live version of the repo-->
         </div>
         <div class="project-info">
@@ -130,51 +138,49 @@
           <button>Github Repo</button> <!--would like to use github icon-->
         </div>
       </div>
-    </div>
-    </div>
-
-    <section class="about-me">
-      <div class="content-wrapper">
-        <!--logo img goes here-->
-        <h2>About Me:</h2>
-        <p>Hi there! I'm Maggie and I love development because I have an eternal quest of learning how to make things
-          work efficiently with responsiveness and accessibility in mind! As a former Special Educator, I excel in
-          managing chaos and complex problem solving with a positive attitude.
-
-          If I’m not coding or spending time with my husband, daughter and three golden retrievers, you can find me
-          trying to figure out how to renovate something else in our family’s home.
-
-          I'd love to take my next click into the coding world with you!</p>
       </div>
+    </section>
 
+    <section class="about">
+      <div class="about-me-content-wrapper">
+        <div class="logo">
+          <!--logo img goes here-->
+        </div>
+        <div class="about">
+          <h3>About Me:</h3>
+          <p>Hi there! I'm Maggie and I love development because I have an eternal quest of learning how to make things
+            work efficiently with responsiveness and accessibility in mind! As a former Special Educator, I excel in
+            managing chaos and complex problem solving with a positive attitude.
+
+            If I’m not coding or spending time with my husband, daughter and three golden retrievers, you can find me
+            trying to figure out how to renovate something else in our family’s home.
+
+            I'd love to take my next <span>click</span> into the coding world with you!</p>
+        </div>
+      </div>
     </section>
 
     <footer>
-      <section class="contact-me">
-        <h2>Contact Me:</h2>
-        <div class="hire-me">
-          <h3>Hire Me:</h3>
-          <ul>
-            <li>hamaggie25@gmail.com</li>
-            <li>678-953-0470</li>
-          </ul>
+      <div class="footer-content-wrapper">
+        <section class="contact-me">
+          <h3>Contact Me:</h3>
+          <p>hamaggie25@gmail.com</p>
+          <p>678-953-0470</p>
+          <p>
+            <a href="https://github.com/maggie-mcdonald" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/maggie-mcdonald/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+          </p>
+        </section>
+
+        <div class="footnote">
+          <p>Portfolio 2023 | Maggie McDonald</p>
         </div>
 
-        <div class="follow-me">
-          <h3>Follow Me:</h3>
-          <ul>
-            <!--fix these. You need to download the .png for linkin and github logo-->
-            <li>hamaggie25@gmail.com</li>
-            <li>678-953-0470</li>
-          </ul>
-        </div>
-      </section>
-
-      <div class="footnote">
-        <p>Portfolio 2023 | Maggie McDonald</p>
-      </div>
     </footer>
-
+    </div>
   </main>
 
 

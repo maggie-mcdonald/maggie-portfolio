@@ -103,53 +103,40 @@ img {
   max-width: 100%;
 }
 
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
 h1 {
   font-family: "Century Schoolbook";
-  background-color: #2a9d8f;
   font-size: 4em;
+  text-align: left;
 }
 
 h2 {
   font-family: "Century Schoolbook";
-  background-color: #2a9d8f;
-  font-size: 1.5em;
+  font-size: 2em;
+
 }
 
+h3 {
+  font-family: "Century Schoolbook";
+  background-color: #3f8c84;
+  font-size: 1.75em;
+}
 /*------ Base Header Styles-------*/
-
-
 
 header {
   display: flex;
   flex-flow: column;
-  background-color: #2a9d8f;
+  background-color: #3f8c84 ;
   background-size: cover;
 }
 
-.blue-box {
-  background-color: #2a9d8f;
-}
-
-.figure {
-  max-width: 26em;
-  max-height: 23.5em; 
-}
 .header-content-wrapper {
   background-image: url(../img/code-mountain-color-scheme.png);
-  background-color: #2a9d8f;
   background-size: cover;
   background-repeat: round;
-  border: .5em, #fff;
-  padding: 4em;
+  padding: 3em;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 
 }
 
@@ -160,35 +147,88 @@ header {
 
 
 .skills-flex-container {
+  padding: 4em;
   height: auto;
   width: auto;
   display: flex;
   flex-flow: row wrap;
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #bca162;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  background-color: #b96852;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.topnav a.icon {
+  float: right;
+
+}
+
+.topnav a:hover {
+  background-color: #c98e5f;
+  color: #3a474e;
+}
+
 /*--aside with skills--*/
 
-.blue-skills-box {
-  background-color: #2a9d8f;
+#skills {
+  background-color: #408479;
+  margin: 1em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-
+skills-section
 /*----project section  ----*/
 
-.project-flex-container {
+#projects {
   background: #3a474e;
+  padding: 2em;
+}
+
+.project-container {
+  background: #3a474e;
+  padding: 2em;
 }
 
 
+/*--about me section--*/
 
 
+.about-me-content-wrapper {
+  background: #b96852;
+  padding: 2em;
+}
+.about {
+  background: #3a474e;
+  padding: 2em;
+}
+
+.black {
+  margin: 4 em;
+}
 
 
+/*--footer-contact me section--*/
 
-
-
-
-
+.footer-content-wrapper {
+  background: #bca162;
+  padding: 2em;
+}
 
 
 /*
