@@ -104,42 +104,88 @@ img {
 
 h1 {
   font-family: "Century Schoolbook";
-  font-size: 5em;
+  font-size: 4em;
   text-align: center;
 }
 
 h2 {
-  font-family: "Franklin Gothic Demi";
-  font-size: 3em;
-  color: #3a474e;
+  font-family: "Century Schoolbook";
+  font-size: 2.5em;
+  color: #fff;
 }
 
 h3 {
   font-family: "Century Schoolbook";
-  font-size: 1.75em;
+  font-size: 2em;
 }
 
 p {
   font-family: "Franklin Gothic Book";
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: center;
   color: #fff;
 }
 
+#scroll-button {
+  display: none;
+  position: fixed;
+  bottom: 2.75em;
+  right: 2.75%;
+  z-index: 9999;
+  background-color: #cd9263;
+  color: #41877a;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  border-radius: 50%;
+  font-size: 2em;
+  border: 1px solid #fff;
+}
+
+#scroll-button:hover {
+  background-color: #41877a;
+  color: #cd9263;
+}
+
 /*------ Base Header Styles-------*/
+
+#head {
+  background-color: #707e86;
+}
 
 header {
   display: flex;
-  flex-flow: column;
-  background-color: #3f8c84;
+  flex-flow: column wrap;
 }
 
-.header-content-wrapper {
+#hero {
+  background-image: url(../img/code-mountain-5.png);
+  background-size: cover;
+  padding: 12em;
+}
 
-  padding: 3em;
+.hero-content-wrapper {
+  background: #d79888c9;
+  border: 1px solid #b96852;
+  border-radius: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row wrap;
+  padding-top: 2em;
+  margin: 0, 4em;
+}
 
+.half-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  width: 76%;
+  padding: 1.5rem;
+  font-family: "Franklin Gothic Demi";
+  letter-spacing: 2px;
+  line-height: 1.6em;
 }
 
 button {
@@ -155,8 +201,15 @@ button {
 }
 
 .intro-flex-container {
+  background: #707e86;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  margin: 6em;
+  padding-top: 1em;
+}
+
+.intro {
+  padding-left: 2em;
 }
 
 .mobile-container {
@@ -170,13 +223,14 @@ button {
 
 .topnav {
   overflow: hidden;
-  background-color: #bca162;
+  background-color: #73b0a9;
   position: relative;
 }
 
 .topnav #myLinks {
   display: none;
 }
+
 
 .topnav a {
   float: left;
@@ -187,38 +241,55 @@ button {
 
 .topnav a.icon {
   float: right;
-
+  color: #41877a;
 }
 
 .topnav a:hover {
-  background-color: #c98e5f;
-  color: #3a474e;
+  background-color: #bca162;
+  color: #41877a;
 }
+
 
 /*--aside with skills--*/
 
 #skills {
+  background: #d79888c9;
+  border: 1px solid #b96852;
+  border-radius: 15px;
+  margin-top: 6em;
   display: flex;
   justify-content: space-evenly;
-  background: #bca162e2;
-  margin: 3em;
-  padding: 1em;
+  padding: .5em;
+}
+
+.skill-title {
+  align-items: center;
 }
 
 .skills-list {
   margin: 2em;
 }
 
+p span {
+  font-size: 1.75em;
+  font-weight: 900;
+  font-family: "Century Schoolbook";
+}
+
 /*----project section  ----*/
 
 #projects {
-  background: #3a474e;
+  background: #3a474eda;
   padding: 2em;
 }
 
 .project-container {
   background: #3a474e;
   padding: 2em;
+}
+
+.description {
+  margin: 4em;
 }
 
 
@@ -231,17 +302,12 @@ button {
 }
 
 .about {
-  background: #3a474e;
+  background: #cd9263;
   padding: 2em;
-  margin: 3em;
 }
 
 .about p {
   margin: 7em;
-}
-
-.black {
-  margin: 4 em;
 }
 
 
@@ -260,9 +326,11 @@ button {
 }
 
 .contact-me {
-  background-color: #b96852be;
+  background-color: #3a474eda;
+  border-radius: 15px;
   color: #fff;
   padding: 5em;
+  margin-top: 2em;
 }
 
 
@@ -276,14 +344,24 @@ footer a {
 }
 
 footer a:hover {
-  color: #3a474e;
+  color: #cd9263;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footnote {
-  background: #3a474ebb;
+
   padding: 2em;
   display: flex;
-  align-self: end;
+  align-self: center;
+}
+
+.footer-p {
+  font-weight: 900;
+
 }
 
 /*
@@ -370,8 +448,30 @@ footer a:hover {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet style adjustments for viewports that meet the condition */
+
+  /*---header---*/
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  #hero {
+    padding: 8em;
+  }
+
+
+
+  .figure {}
+
+  .half-content {
+    display: flex;
+    flex-flow: ;
+  }
 }
 
 @media print,

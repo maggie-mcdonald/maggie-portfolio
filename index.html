@@ -37,14 +37,18 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
+  <!-- Scroll to Top Button -->
+  <button onclick="topFunction()" id="scroll-button" title="Scroll to Top">
+    <i class="fa-solid fa-arrow-up"></i>  
+  </button>
 
   <header>
-    <section id="header">
+    <section id="head">
       <h1>Maggie McDonald</h1>
       <div class="topnav">
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <!--put your resume here-->
+          <!--put your resume here Maggie-->
           <a href="https://drive.google.com/file/d/1KFT2SSki1rvDKGvvzIFngjWX_bOZX9EX/view?usp=share_link"
             target="_blank">Resume</a>
           <a href="#about">About</a>
@@ -56,41 +60,43 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
-
+      </div>
   </header>
-  <div class="header-content-wrapper">
-    <div class="intro-flex-container">
-      <div class="figure">
-        <figure>
-          <a href="#"><img src="img\profile-pic.png" alt="maggie"></a>
-        </figure>
-      </div>
-
-      <div>
-        <h2>Hi! <br> I'm a Front <br> End Web Developer <br> in Georgia.
-        </h2>
-      </div>
-    </div>
-
-    <section id="skills">
-      <div class="skills-section">
-        <h3 class="skill-title">Skills:</h3>
-        <p class="skills-list">
-          HTML5 | CSS3 | JavaScript | React.js | Flexbox & CSS Grid | JSX | ES6 | Git |
-          Version Control | APIs | Managing data flow | Media queries | Responsive typography
-        </p>
-      </div>
-      <div class="skills-section">
-        <h3 class="skill-title">Tools:</h3>
-        <p class="skills-list">
-          Visual Studio Code | Code Sandbox | Chrome DevTools | Github | Photoshop
-        </p>
-      </div>
-  </div>
-  </section>
-  </section>
-  <!--Project Section-->
   <main>
+    <div id="hero">
+      <div class="hero-content-wrapper">
+        <div class="half-content">
+          <h2 class="hero-text">
+            Hi!<span> I'm Maggie</span> and I'm a Front End Web Developer in Georgia who specializes in writing clean
+            and responsive code.
+          </h2>
+        </div>
+        <div class="half-content">
+          <figure>
+            <a href="#"><img src="img\profile-pic.png" alt="maggie"></a>
+          </figure>
+        </div>
+      </div>
+      <!--Skill Section-->
+      <section id="skills">
+        <div class="skills-section">
+          <div class="half-content">
+            <p class="skills-list">
+              <span>Skills:</span><br>
+              HTML5 | CSS3 | JavaScript | React.js | Flexbox & CSS Grid | JSX | ES6 | Git |
+              Version Control | APIs | Managing data flow | Media queries | Responsive typography
+            </p>
+          </div>
+        </div>
+        <div class="half-content">
+          <p class="skills-list">
+            <span>Tools:</span><br>
+            Visual Studio Code | Code Sandbox | Chrome DevTools | Github | Photoshop
+          </p>
+        </div>
+      </section>
+    </div>
+    <!--Project Section-->
     <section id="projects">
       <div class="project-container">
         <h3>Project: Guess The Word Game</h3>
@@ -99,12 +105,14 @@
           <!--this is where I would like to place a live version of the repo-->
         </div>
         <div class="project-info">
-          <p class="description"> An interactive Vanilla JavaScript game where the player must guess the word one letter
+          <p class="description"> An interactive Vanilla JavaScript game where the player must guess the word one
+            letter
             at a time with a total of 8 guesses.</p>
           <p class="skills"><em>Skills: JS, Responsive Design, DOM Manipulation, Loops, APIs</em></p>
           <button onclick=`window.location.href="https://maggie-mcdonald.github.io/guess-the-word/" ;`>Live
             Site</button>
-          <button>Github Repo</button> <!--would like to use github icon-->
+          <button>Github Repo</button>
+          <hr>
         </div>
       </div>
 
@@ -120,6 +128,7 @@
           <p class="skills"><em>Skills: React.JS, JSX, CSS3, Lifecycle Methods</em></p>
           <button>Live Site</button>
           <button>Github Repo</button> <!--would like to use github icon-->
+          <hr>
         </div>
       </div>
 
@@ -137,7 +146,6 @@
           <button>Live Site</button>
           <button>Github Repo</button> <!--would like to use github icon-->
         </div>
-      </div>
       </div>
     </section>
 
@@ -164,9 +172,8 @@
       <div class="footer-content-wrapper">
         <section class="contact-me">
           <h3>Let's have a chat!</h3>
-          <p>678-953-0470</p>
+          <p class="footer-p">678-953-0470</p>
           <a href="mailto:hamaggie25@gmail.com">hamaggie25@gmail.com</a>
-
           <div class="social-icons">
             <p>
               <a href="https://github.com/maggie-mcdonald" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -176,7 +183,6 @@
                   class="fa-brands fa-linkedin"></i></a>
             </p>
           </div>
-
         </section>
 
         <div class="footnote">
@@ -184,13 +190,6 @@
         </div>
       </div>
     </footer>
-
   </main>
-
-
-
-
-
 </body>
-
 </html>
