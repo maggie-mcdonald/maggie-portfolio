@@ -110,7 +110,7 @@ h1 {
 
 h2 {
   font-family: "Century Schoolbook";
-  font-size: 2.5em;
+  font-size: 4em;
   color: #fff;
 }
 
@@ -466,11 +466,13 @@ footer a:hover {
 
 
 
-  .figure {}
+  .figure {
+    min-width: 100px;
+  }
 
   .half-content {
     display: flex;
-    flex-flow: ;
+    flex-flow: column;
   }
 }
 
