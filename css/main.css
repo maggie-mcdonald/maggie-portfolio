@@ -119,12 +119,12 @@ h2 {
 
 h3 {
   font-family: "Century Schoolbook";
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 p {
   font-family: "Franklin Gothic Book";
-  font-size: 1.25em;
+  font-size: 1.5em;
   text-align: center;
   color: #fff;
 }
@@ -135,7 +135,7 @@ p {
   bottom: 2.75em;
   right: 2.75%;
   z-index: 9999;
-  background-color: #cd9263;
+  background-color: #f6b39a;
   color: #41877a;
   cursor: pointer;
   padding: 10px 15px 10px 15px;
@@ -176,6 +176,7 @@ header {
   width: 85%;
   display: flex;
   flex-flow: column;
+  margin-top: 2em;
 }
 
 .half-content {
@@ -198,7 +199,7 @@ button {
 }
 
 .button:hover {
-  background-color: #FEF4EC;
+  background-color: #bca162;
 }
 
 .intro-flex-container {
@@ -239,6 +240,8 @@ button {
 .topnav a.icon {
   float: right;
   color: #41877a;
+  border: 1px #41877a;
+  border-radius: 10px;
 }
 
 .topnav a:hover {
@@ -253,16 +256,11 @@ button {
   background: #d79888c9;
   border: 1px solid #b96852;
   border-radius: 15px;
-  margin-top: 6em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  padding: .5em;
-  width: 85%;
-}
-
-.skills-list {
-  margin: 2em;
   width: 85%;
 }
 
@@ -282,36 +280,34 @@ p span {
 .project-container {
   background: #3a474e;
   padding: 2em;
+  border-radius: 15px;
+  border: 1px solid #bca162;
+  margin-bottom: 2em;
 }
-
-.description {
-  margin: 4em;
-}
-
 
 /*--about me section--*/
-
 
 .about-me-content-wrapper {
   background: #b96852;
   padding: 1em;
   display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
+  flex-flow: column;
+  border-radius: 15px;
+  border: 1px solid #41877a;
 }
 
 .about {
-  background: #cd9263;
+  background: #f6b39a;
   padding: 2em;
+  color: #3a474e;
+  display: flex;
+  flex-flow: column;
 }
 
-#text {
-  align-items: center;
+.info {
+  color: #3a474e;
 }
 
-.about p {
-  width: 60%;
-}
 
 
 /*--footer-contact me section--*/
@@ -331,8 +327,9 @@ p span {
 .contact-me {
   background-color: #3a474eda;
   border-radius: 15px;
+  border: 1px solid #f6b39a;
   color: #fff;
-  padding: 1em;
+  padding: 2em;
   margin-top: 2em;
   width: 30%;
 }
@@ -353,8 +350,11 @@ footer a:hover {
   justify-content: space-around;
 }
 
-.footnote {
+.size-icon {
+  font-size: 3em;
+}
 
+.footnote {
   padding: 2em;
   display: flex;
   align-self: center;
@@ -467,7 +467,7 @@ footer a:hover {
 
   .half-content {
     display: flex;
-    align-items: center 
+    align-items: center
   }
 
   /*---about---*/
