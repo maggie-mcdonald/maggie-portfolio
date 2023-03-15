@@ -21,9 +21,14 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+
 </head>
 
 <body>
+  <button onclick="topFunction()" id="scroll-button" title="Scroll to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
@@ -38,9 +43,7 @@
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
   <!-- Scroll to Top Button -->
-  <button onclick="topFunction()" id="scroll-button" title="Scroll to Top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
+
 
   <header>
     <section id="head">
@@ -49,7 +52,7 @@
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
           <!--put your resume here Maggie-->
-          <a href="https://drive.google.com/file/d/1KFT2SSki1rvDKGvvzIFngjWX_bOZX9EX/view?usp=share_link"
+          <a href=""
             target="_blank">Resume</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -82,17 +85,17 @@
         <div class="skills-section">
           <div class="half-content">
             <h2 class="hero-text">
-              <span>Skills:</span><br>
-              HTML5 | CSS3 | JavaScript | React.js | Flexbox & CSS Grid | JSX | ES6 | Git |
-              Version Control | APIs | Managing data flow | Media queries | Responsive typography
-              </p>
+              Skills:<br>
+              <span>HTML5 | CSS3 | JavaScript | React.js | Flexbox & CSS Grid | JSX | ES6 | Git |
+                Version Control | APIs | Managing data flow | Media queries | Responsive typography
+              </span></p>
           </div>
         </div>
         <div class="half-content">
           <h2 class="hero-text">
-            <span>Tools:</span><br>
-            Visual Studio Code | Code Sandbox | Chrome DevTools | Github | Photoshop
-            </p>
+            Tools:<br>
+            <span>Visual Studio Code | Code Sandbox | Chrome DevTools | Github | Photoshop
+            </span></p>
         </div>
       </section>
     </div>
@@ -109,9 +112,10 @@
             letter
             at a time with a total of 8 guesses.</p>
           <p class="skills"><em>Skills: JS, Responsive Design, DOM Manipulation, Loops, APIs</em></p>
-          <button onclick=`window.location.href="https://maggie-mcdonald.github.io/guess-the-word/" ;`>Live
+          <button onclick="window.location.href=`https://maggie-mcdonald.github.io/guess-the-word/`;">Live
             Site</button>
-          <button>Github Repo</button>
+          <button onclick="window.location.href=`https://github.com/maggie-mcdonald/guess-the-word`;">Github
+            Repo</button>
         </div>
       </div>
 
@@ -125,8 +129,10 @@
           <p class="description"> A React app that allows for creation, deletion, editing and searching of sticky notes
             that are saved to local storage.</p>
           <p class="skills"><em>Skills: React.JS, JSX, CSS3, Lifecycle Methods</em></p>
-          <button>Live Site</button>
-          <button>Github Repo</button> <!--would like to use github icon-->
+          <button onclick="window.location.href=`https://cjzrq0.csb.app/`;">Live Site</button>
+          <button
+            onclick="window.location.href=`https://codesandbox.io/s/l12-build-your-big-component-help-forked-cjzrq0`;">Code
+            Sandbox</button>
         </div>
       </div>
 
@@ -141,26 +147,30 @@
           <p class="description">A responsive API gallery of my current repos on Github. Repos are easy to find with an
             eliminating search feature and easy navigation with multiple buttons.</p>
           <p class="skills"><em>Skills: JS, APIs, Dom Manipulation, Loops</em></p>
-          <button>Live Site</button>
-          <button>Github Repo</button> <!--would like to use github icon-->
+          <button onclick="window.location.href=`https://maggie-mcdonald.github.io/github-repo-gallery/`;">Live
+            Site</button>
+          <button onclick="window.location.href=`https://github.com/maggie-mcdonald/github-repo-gallery`;">Github
+            Repo</button>
         </div>
       </div>
     </section>
 
-    <section class="about">
+    <section id="about">
       <div class="about-me-content-wrapper">
         <!--
         <div class="logo">
           logo 
         </div>
--->
+        -->
         <div class="about">
           <h3>About Me:</h3>
-          <p class="info">Hi there! I'm Maggie and I love development because I have an eternal quest of learning how to make things
+          <p class="info">Hi there! I'm Maggie and I love development because I have an eternal quest of learning how to
+            make things
             work efficiently with responsiveness and accessibility in mind! As a former Special Educator, I excel in
             managing chaos and complex problem solving with a positive attitude.
 
-            If I’m not coding or spending time with my husband, daughter and three golden retrievers, you can find me
+            I’m either coding, spending time with my husband, daughter and three golden retrievers, or you can find
+            me
             trying to figure out how to renovate something else in our family’s home!
 
             I'd love to take my next <span>click</span> into the coding world with you!</p>
@@ -170,10 +180,10 @@
 
     <footer>
       <div class="footer-content-wrapper">
-        <section class="contact-me">
+        <section id="contact">
           <h3>Let's have a chat!</h3>
-          <p class="footer-p">678-953-0470</p>
-          <a href="mailto:hamaggie25@gmail.com">hamaggie25@gmail.com</a>
+          <i class="fa-solid fa-mobile-screen"></i> <p class="footer-p">678-953-0470</p>
+          <a href="mailto:hamaggie25@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a>
           <div class="social-icons">
             <p class="size-icon">
               <a href="https://github.com/maggie-mcdonald" target="_blank"><i class="fa-brands fa-github"></i></a>

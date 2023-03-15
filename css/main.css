@@ -100,12 +100,13 @@ body {
 
 img {
   max-width: 100%;
+  border: 1px #3a474e;
 }
 
 
 h1 {
   font-family: "Century Schoolbook";
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -124,7 +125,7 @@ h3 {
 
 p {
   font-family: "Franklin Gothic Book";
-  font-size: 1.5em;
+  font-size: 1.6em;
   text-align: center;
   color: #fff;
 }
@@ -135,8 +136,8 @@ p {
   bottom: 2.75em;
   right: 2.75%;
   z-index: 9999;
-  background-color: #f6b39a;
-  color: #41877a;
+  background-color: #41877a;
+  color: #cd9263;
   cursor: pointer;
   padding: 10px 15px 10px 15px;
   border-radius: 50%;
@@ -145,7 +146,7 @@ p {
 }
 
 #scroll-button:hover {
-  background-color: #41877a;
+  background-color: #707e86;
   color: #cd9263;
 }
 
@@ -170,7 +171,7 @@ header {
 }
 
 .hero-content-wrapper {
-  background: #d79888c9;
+  background: #73b0a9cc;
   border: 1px solid #b96852;
   border-radius: 15px;
   width: 85%;
@@ -189,17 +190,21 @@ header {
   width: 80%;
 }
 
+span {
+  font-weight: 500;
+}
 
 button {
-  background-color: #b96852;
+  background-color: #41877a;
   border-radius: 12px;
   cursor: pointer;
   color: #fff;
   border-color: #fff;
 }
 
-.button:hover {
-  background-color: #bca162;
+button:hover {
+  background-color: #f6b39a;
+  color: #3a474e;
 }
 
 .intro-flex-container {
@@ -221,8 +226,9 @@ button {
 
 .topnav {
   overflow: hidden;
-  background-color: #73b0a9;
+  background-color: #d79888c9;
   position: relative;
+  border: 1px solid #bca162;
 }
 
 .topnav #myLinks {
@@ -231,10 +237,12 @@ button {
 
 
 .topnav a {
-  float: left;
+  float: right;
   padding: 1em;
   text-decoration: none;
   font-size: 1em;
+  color: #3a474e;
+  font-family: "Century Schoolbook";
 }
 
 .topnav a.icon {
@@ -254,7 +262,7 @@ button {
 
 #skills {
   background: #d79888c9;
-  border: 1px solid #b96852;
+  border: 1px solid #41877a;
   border-radius: 15px;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -266,14 +274,14 @@ button {
 
 p span {
   font-size: 1.3em;
-  font-weight: 900;
+  font-weight: 500;
   font-family: "Century Schoolbook";
 }
 
 /*----project section  ----*/
 
 #projects {
-  background: #3a474eda;
+  background: #707e86;
   padding: 2em;
 }
 
@@ -288,30 +296,28 @@ p span {
 /*--about me section--*/
 
 .about-me-content-wrapper {
-  background: #b96852;
-  padding: 1em;
+  background: #707e86;
+  color: #fff;
+  padding: 2em;
   display: flex;
   flex-flow: column;
   border-radius: 15px;
   border: 1px solid #41877a;
 }
 
-.about {
+#about {
   background: #f6b39a;
   padding: 2em;
-  color: #3a474e;
+
   display: flex;
   flex-flow: column;
 }
 
 .info {
-  color: #3a474e;
+  color: #fff;
 }
 
-
-
 /*--footer-contact me section--*/
-
 
 .footer-content-wrapper {
   background-image: url(../img/bailey-zindel-nrqv-hbf10m-unsplash.jpg);
@@ -324,12 +330,12 @@ p span {
   align-items: center;
 }
 
-.contact-me {
+#contact {
   background-color: #3a474eda;
   border-radius: 15px;
   border: 1px solid #f6b39a;
   color: #fff;
-  padding: 2em;
+  padding: 2.75em;
   margin-top: 2em;
   width: 30%;
 }
@@ -339,6 +345,7 @@ footer a {
   color: #FEF4EC;
   text-decoration: none;
   font-weight: 900;
+  font-size: 
 }
 
 footer a:hover {
@@ -454,15 +461,15 @@ footer a:hover {
 
   /*---header---*/
   h1 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 
   p {
-    font-size: .75em;
+    font-size: 1.25em;
   }
 
   .half-content {
@@ -471,6 +478,8 @@ footer a:hover {
   }
 
   /*---about---*/
+
+
 
 }
 
