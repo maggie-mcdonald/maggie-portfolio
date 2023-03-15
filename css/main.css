@@ -243,6 +243,7 @@ button:hover {
   font-size: 1em;
   color: #3a474e;
   font-family: "Century Schoolbook";
+  text-transform: uppercase;
 }
 
 .topnav a.icon {
@@ -300,7 +301,7 @@ p span {
   color: #fff;
   padding: 2em;
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   border-radius: 15px;
   border: 1px solid #41877a;
 }
@@ -308,10 +309,19 @@ p span {
 #about {
   background: #f6b39a;
   padding: 2em;
-
-  display: flex;
-  flex-flow: column;
 }
+
+.logo {
+  width: 90%;
+}
+
+
+.about-flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
 
 .info {
   color: #fff;
@@ -323,10 +333,10 @@ p span {
   background-image: url(../img/bailey-zindel-nrqv-hbf10m-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40em;
+  height: 60em;
   /* padding: 3em;*/
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -337,39 +347,41 @@ p span {
   color: #fff;
   padding: 2.75em;
   margin-top: 2em;
-  width: 30%;
+  width: 40%;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+/* figure out how to either remove button styling or use the icon as the button*/
+.phone {
+  display: none;
+}
 
 footer a {
   color: #FEF4EC;
   text-decoration: none;
   font-weight: 900;
-  font-size: 
 }
 
 footer a:hover {
   color: #f6b39a;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: space-around;
-}
-
 .size-icon {
   font-size: 3em;
+  display: flex;
 }
 
 .footnote {
   padding: 2em;
-  display: flex;
-  align-self: center;
 }
 
 .footer-p {
   font-weight: 900;
-
 }
 
 /*
@@ -472,13 +484,12 @@ footer a:hover {
     font-size: 1.25em;
   }
 
-  .half-content {
-    display: flex;
-    align-items: center
-  }
 
   /*---about---*/
 
+  .about-half-content {
+    width: 50%;
+  }
 
 
 }

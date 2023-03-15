@@ -26,6 +26,7 @@
 </head>
 
 <body>
+  <!-- Scroll to Top Button -->
   <button onclick="topFunction()" id="scroll-button" title="Scroll to Top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
@@ -34,6 +35,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="app.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -42,9 +44,6 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
-  <!-- Scroll to Top Button -->
-
-
   <header>
     <section id="head">
       <h1>Maggie McDonald</h1>
@@ -52,8 +51,7 @@
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
           <!--put your resume here Maggie-->
-          <a href=""
-            target="_blank">Resume</a>
+          <a href="" target="_blank">Resume</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
@@ -157,23 +155,28 @@
 
     <section id="about">
       <div class="about-me-content-wrapper">
-        <!--
-        <div class="logo">
-          logo 
-        </div>
-        -->
-        <div class="about">
-          <h3>About Me:</h3>
-          <p class="info">Hi there! I'm Maggie and I love development because I have an eternal quest of learning how to
-            make things
-            work efficiently with responsiveness and accessibility in mind! As a former Special Educator, I excel in
-            managing chaos and complex problem solving with a positive attitude.
+        <div class="about-flex-container">
+          <div class="about-half-content">
+            <div class="logo">
+              <a href="#"><img src="img/mags-logo.png" alt="mags-logo"></a>
+            </div>
+          </div>
+          <div class="about-half-content">
+            <div class="about">
+              <h3>About Me:</h3>
+              <p class="info">Hi there! I'm Maggie and I love development because I have an eternal quest of learning
+                how to
+                make things
+                work efficiently with responsiveness and accessibility in mind! As a former Special Educator, I excel in
+                managing chaos and complex problem solving with a positive attitude.
 
-            I’m either coding, spending time with my husband, daughter and three golden retrievers, or you can find
-            me
-            trying to figure out how to renovate something else in our family’s home!
+                I’m either coding, spending time with my husband, daughter and three golden retrievers, or you can find
+                me
+                trying to figure out how to renovate something else in our family’s home!
 
-            I'd love to take my next <span>click</span> into the coding world with you!</p>
+                I'd love to take my next <span>click</span> into the coding world with you!</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -182,9 +185,10 @@
       <div class="footer-content-wrapper">
         <section id="contact">
           <h3>Let's have a chat!</h3>
-          <i class="fa-solid fa-mobile-screen"></i> <p class="footer-p">678-953-0470</p>
-          <a href="mailto:hamaggie25@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a>
           <div class="social-icons">
+            <p class="size-icon"><button id="phone"><i class="fa-solid fa-mobile-screen"></i></button></p>
+            <p class="size-icon"><a href="mailto:hamaggie25@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+            </p>
             <p class="size-icon">
               <a href="https://github.com/maggie-mcdonald" target="_blank"><i class="fa-brands fa-github"></i></a>
             </p>
