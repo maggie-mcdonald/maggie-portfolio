@@ -35,7 +35,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="app.js"></script>
+  <script src="popup/node_sms/index.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -185,23 +185,28 @@
       <div class="footer-content-wrapper">
         <section id="contact">
           <h3>Let's have a chat!</h3>
-          <div class="social-icons">
-            <p class="size-icon"><button id="phone"><i class="fa-solid fa-mobile-screen"></i></button></p>
-            <p class="size-icon"><a href="mailto:hamaggie25@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a>
-            </p>
-            <p class="size-icon">
-              <a href="https://github.com/maggie-mcdonald" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </p>
-            <p class="size-icon">
-              <a href="https://linkedin.com/in/maggie-mcdonald-3049a3217/" target="_blank"><i
-                  class="fa-brands fa-linkedin"></i></a>
-            </p>
-          </div>
-        </section>
+          <div class="social-icons"></div>
+          <p class="social-icons">
+<!--figure out this friggin button-->
+            <button id="phone" onclick={PopUp}><i
+                class="fa-solid fa-mobile-screen"></a></i></button>
 
-        <div class="footnote">
-          <p>Portfolio 2023 | Maggie McDonald </p>
-        </div>
+          </p>
+          <p class="size-icon"><a href="mailto:hamaggie25@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+          </p>
+          <p class="size-icon">
+            <a href="https://github.com/maggie-mcdonald" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </p>
+          <p class="size-icon">
+            <a href="https://linkedin.com/in/maggie-mcdonald-3049a3217/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+          </p>
+      </div>
+      </section>
+
+      <div class="footnote">
+        <p>Portfolio 2023 | Maggie McDonald </p>
+      </div>
       </div>
     </footer>
   </main>

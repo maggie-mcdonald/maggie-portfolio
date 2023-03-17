@@ -26,3 +26,5 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+
+  export default onscroll;

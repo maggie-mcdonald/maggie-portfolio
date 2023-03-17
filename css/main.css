@@ -357,8 +357,8 @@ p span {
 }
 
 /* figure out how to either remove button styling or use the icon as the button*/
-.phone {
-  display: none;
+#phone {
+  font-size: 3em;
 }
 
 footer a {

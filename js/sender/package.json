@@ -7,5 +7,8 @@
     "test": "npm install messagemedia-messages-sdk"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "messagemedia-messages-sdk": "^2.0.3"
+  }
 }
