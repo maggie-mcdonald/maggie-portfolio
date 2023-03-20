@@ -96,6 +96,7 @@ html {
 body {
   text-align: center;
   color: #fff;
+  background-color: #59656B;
 }
 
 img {
@@ -146,14 +147,14 @@ p {
 }
 
 #scroll-button:hover {
-  background-color: #707e86;
+  background-color: #59656B;
   color: #cd9263;
 }
 
 /*------ Base Header Styles-------*/
 
 #head {
-  background-color: #707e86;
+  background-color: #59656B;
 }
 
 header {
@@ -195,7 +196,7 @@ span {
 }
 
 button {
-  background-color: #41877a;
+  background-color: #336D62;
   border-radius: 12px;
   cursor: pointer;
   color: #fff;
@@ -248,14 +249,14 @@ button:hover {
 
 .topnav a.icon {
   float: right;
-  color: #41877a;
-  border: 1px #41877a;
+  color: #183933;
+  border: 1px #183933;
   border-radius: 10px;
 }
 
 .topnav a:hover {
   background-color: #bca162;
-  color: #41877a;
+  color: #183933;
 }
 
 
@@ -314,7 +315,7 @@ p span {
 /*--about me section--*/
 
 .about-me-content-wrapper {
-  background: #707e86;
+  background: #59656B;
   color: #fff;
   padding: 2em;
   border-radius: 15px;
@@ -353,7 +354,7 @@ p span {
 }
 
 #contact {
-  background-color: #3a474eda;
+  background-color: #59656bab;
   border-radius: 15px;
   border: 1px solid #f6b39a;
   color: #fff;
@@ -398,7 +399,7 @@ footer a:hover {
 
 .footnote {
   justify-content: center;
-  background-color: #707e86;
+  background-color: #59656B;
 }
 
 .footer-p {
