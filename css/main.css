@@ -346,6 +346,7 @@ p span {
   background-image: url(../img/bailey-zindel-nrqv-hbf10m-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #59656B;
   height: 50em;
   display: flex;
   flex-direction: column;
@@ -366,7 +367,7 @@ p span {
 /* figure out how to either remove button styling or use the icon as the button*/
 
 #phone {
-  width: 20%;
+  width: 17%;
   background: none;
   border: none;
 }
@@ -392,7 +393,7 @@ footer a:hover {
 }
 
 .size-icon {
-  font-size: 3em;
+  font-size: 2.8em;
   display: flex;
   flex-flow: row wrap;
 }
