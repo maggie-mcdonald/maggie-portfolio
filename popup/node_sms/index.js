@@ -1,5 +1,4 @@
-const accountSid = 'ACde9bd7c7189887eaced1bd645f08be50';
-const authToken = '80134b960f5047931dc1df001c46b66c';
+
 const client = require('twilio')(accountSid, authToken);
 const phoneButton = document.querySelector(`#phone`);
 
