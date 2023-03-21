@@ -153,9 +153,9 @@ p {
 
 /*------ Base Header Styles-------*/
 
-#head {
+/* #head {
   background-color: #59656B;
-}
+} */
 
 header {
   display: flex;
@@ -163,8 +163,8 @@ header {
 }
 
 #hero {
-  background-image: url(../img/code-mountain-5.png);
-  background-size: cover;
+  background-image: url(../img/code-mountain-6.png);
+  height: 100%;
   overflow: hidden;
   display: flex;
   flex-flow: column;
@@ -176,8 +176,6 @@ header {
   border: 1px solid #b96852;
   border-radius: 15px;
   width: 85%;
-  display: flex;
-  flex-flow: column;
   margin-top: 2em;
 }
 
